@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <style>
+      body{
+        background: linear-gradient(89deg, rgb(253, 220, 155) 26.2%, rgb(255, 215, 165) 48.5%);
+        
+      }
+       #topcont{
+        background: radial-gradient(circle at 10% 20%, rgb(253, 193, 104) 0%, rgb(251, 128, 128) 90%);
+        width: 100vw;
+        margin:auto;
+
+        padding-left:25px;
+        padding-right:25px;      
+      }
+      .header{
+        height: 160px;
+      }
+     
+     
+      .login-box{
+        border: 2px solid #fff;
+        width: 400px;
+        background: #FFE3BB;
+        display: inline-block;
+        margin-top: -200px;
+        margin-bottom: 120px;
+        border-radius: 7px;
+        margin-left: 50px;
+        padding: 20px;
+        transition: transform 0.2s;
+      }
+      .login-box:hover{
+        transform: scale(0.99);
+        ;
+      }
+      h2{
+        color: #26577C;
+        font-family: 'Georgia';
+        
+      }
+      p{
+        color: #26577C;
+        font-family: 'Georgia';
+        
+      }
+      .logo{
+        transition: transform 0.2s;
+      }
+      .logo:hover{
+        transform: scale(1.1);
+      }
+
+      input[type=text] , input[type=password]
+      {
+          border: 2px solid #fff;
+          width: 100%;
+          padding: 10px;
+          height: 40px;
+          
+          box-sizing: border-box;
+      }
+      button{
+        background-color: #CECE5A;
+        font-family:  monospace;
+        border-radius: 15px;
+        border: 1px solid thin;
+        width: 100px;
+        margin-left: 125px;
+        transition: transform 0.2s;
+      }
+      button:hover{
+        background-color: #7fa99b;
+        transform: scale(0.9);
+      }
+      .navbar{
+        display: flex;
+        padding: 30px;
+        align-items: center;
+      }
+      nav ul{
+        display: inline-block;
+        
+        list-style-type: none;
+        
+      }
+      menuitem{
+        float: right;
+      }
+      nav{
+        flex:1;
+        text-align:right;
+      }
+
+      .header .row{
+        margin-top:20px;
+      }
+      nav ul li
+      {
+        display: inline-block;
+        padding: 20px;
+        justify-content: space-around;
+      }
+     
+      a{
+        color: white;
+        text-decoration: none ;
+        transition: transform 0.2s;
+      }
+      a:hover{
+        color: blue ;
+        transform: scale(0.9);
+      }
+      
+      ul li a img {
+        
+        height: 35px;
+        width: 35px;
+        transition: transform 0.2s;
+        
+      }
+      ul li a img:hover {
+        transform: scale(1.2);
+      }
+      .NewCustomer{
+        margin-left: 600px;
+        margin-top: 100PX;
+        display: block;
+        border-radius: 5px;
+        height: 200px;
+        width: 600PX;
+      }
+      #bottcont{
+        width :100vw;;
+        background:radial-gradient(circle at 10% 20%, rgb(253, 193, 104) 0%, rgb(251, 128, 128) 90%);
+        margin-top: 100px;
+      }
+      
+      #copyrights{
+        color: black;
+      }
+     div > form> fieldset{
+      color: black;
+      background-color: #FFE3BB;
+      border: 2px solid #fff;
+      font-family:Georgia ;
+      border-radius: 5px;
+      padding: 20px;
+      transition: transform 0.2s;
+     }
+     div > form> fieldset:hover{
+      transform: scale(0.98);
+
+     }
+     #btn1{
+      background-color: #ff6f3c;
+      width: 200px;
+      padding: 10px;
+      font-family: "times new roman";
+     }
+     #btn1:hover{
+      background-color:  #FA3415
+     }
+    #botimg{
+      background-color: white;
+      width: 250px;
+      padding: 30px;
+    }
+    i{
+      font-size: large;
+      font-style:bold;
+    }
+    .sinimg{
+      display: inline-block;
+      margin-left: 700px;
+      margin-top: -900px;
+      transition: transform 0.2s;
+    }
+     .sinimg:hover{
+      transform: scale(0.92);
+     }
+     
+      
+      
+      
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="header" id="topcont">
+        <div class="container">
+          <div class="navbar">
+            <div class="logo">
+              <a href="Home.html"
+                ><img
+                  src="https://angular.pixelstrap.com/multikart/assets/images/icon/logo.png"
+                  alt="NoImage"
+                  width="125px"
+              /></a>
+            </div>
+            <nav>
+              <ul id="MenuItems">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="Offers.html">Offers Zone</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Account.html">Account</a></li>
+              </ul>
+            </nav>
+            <a href="cart.html"
+              ><img
+                src="catalogue_9342122.png"
+                alt="Sorry"
+                width="50px"
+                height="50px"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="new" >
+    <form class="NewCustomer">
+      <fieldset>
+        <legend>New Customer</legend>
+        <p>Sign up for a free account at our store. Registration is quick and easy. It allows you to be able to order from our shop. To start shopping click register.</p>
+       <a href="newaccount.html"> <button type="button"  id="btn1" class="btn btn-default">CREATE AN ACCOUNT</button></a>
+      </fieldset>
+    </form>
+   </div>
+  <div class="login-box">
+   <h2>Login</h2>
+   <form action="login" method="post">
+     <p>Mobile: </p>
+     <input type="text" required>
+     <br>
+     <br>
+     <p>Password:</p>
+     <input type="password" required ><br>
+     <a href="#" style="color: blue; text-decoration: underline;">Forget password?</a><br><br>
+     <a href="Home.html"><button type="button" id="btn1" class="btn btn-default">LogInn</button></a>
+     <br>
+     
+   </form>
+   
+ </div>
+    <div class="sinimg" >
+   <a href="newaccount.html"> 
+      <img  src="Tablet login-amico.png" width="300px" alt="">
+    </a>
+  </div>
+ 
+ 
+  <div class="footer" id="bottcont" >
+    <div class="container">
+      
+      <div class="navbar" >
+        
+        <div id="copyrights"  style="color: black;">
+          <div id="botimg">
+            <a href="Home.html"
+              ><img
+                src="https://angular.pixelstrap.com/multikart/assets/images/icon/logo.png"
+                alt="NoImage"
+                width="200px"
+            /></a><i>  Fashion Is More Art
+            Than Art Is !!</i>
+        </div>
+          <span >&#169;This Website is prepared under the regulations of w3.org in 2023
+          this site uses <br> the consumers Information for only buisness purposes. <br>
+         For more Info: <a href="#" style="color: black;">Visit Here </a>
+        </span>
+        </div>
+        <nav>
+          <ul id="MenuItems1">
+            <span id="imgspan" style="color: black;">follwo us on :</span>
+            <li><a href="https://facebook.com"><img src="facebook.png" alt="facebook"></a></li>
+            <li><a href="https://instagram.com"><img src="instagram.png" alt="Instgram"></a></li>
+            <li><a href="https://twitter.com"><img src="twitter (1).png" alt="twitter"></a></li>
+            <li><a href="https://youtube.com"> <img src="youtube.png" alt="yuotube"></a></li>
+            <li><a href="https://telegram.com"> <img src="telegram.png" alt="telegram"></a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+   </div> 
+ 
+  </div>
+  </body>
+</html>

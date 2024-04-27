@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offers at MultiKart</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <style>
+        body{
+          background-color: lightblue;
+        }
+      #topcont {
+        max-width: 100vw;
+        background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+      }
+      .header {
+        height: 160px;
+      }
+      .navbar {
+        display: flex;
+        padding: 30px;
+        align-items: center;
+      }
+      nav ul {
+        display: inline-block;
+
+        list-style-type: none;
+      }
+      menuitem {
+        float: right;
+      }
+      nav {
+        flex: 1;
+        text-align: right;
+      }
+
+      .header .row {
+        margin-top: 20px;
+      }
+      nav ul li {
+        display: inline-block;
+        padding: 20px;
+        justify-content: space-around;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        transition: transform 0.2s;
+      }
+      a:hover {
+        color: blue;
+        transform: scale(0.9);
+      }
+
+      ul li a img {
+        height: 35px;
+        width: 35px;
+        transition: transform 0.2s;
+      }
+      ul li a img:hover {
+        transform: scale(1.2);
+      }
+
+      #bottcont {
+        max-width: 100vw;
+        background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+        margin-top: 100px;
+      }
+
+      #footmat {
+        color: white;
+      }
+    #col-1{
+        margin-top: 100px;
+    }
+    #col-1 h1{
+        padding-bottom: 50px
+    }
+      #menimg{
+        border-radius: 10px;
+        
+    }
+    #col-1 img{
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s; 
+    }
+    #col-1 img:hover{
+        transform: scale(0.92);
+    }  
+      #col-2{
+        margin-top: 100px;
+    }
+    #col-2 h1{
+        padding-bottom: 50px
+    }
+      #woimg{
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    #col-2 img{
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s; 
+    }
+    #col-2 img:hover{
+        transform: scale(0.92);
+    }
+    #col-3{
+        padding-left: 70px;
+    }
+    #col-3 h1{
+        padding-bottom: 45px;
+    }
+    #col-3 img{
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s;
+    }
+    #col-3 img:hover{
+        transform: scale(0.92);
+    }
+    #col-4{
+        margin-top: 100px;
+    }
+    #col-4 h1{
+        padding-bottom: 50px
+    }
+    #col-4 img{
+        border-radius: 10px;
+        transition: transform 0.2s; 
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    #col-4 img:hover{
+        transform: scale(0.92);
+    }
+    #col-5 h1{
+        padding-bottom: 45px;
+        padding-top: 100px;
+    }
+    #col-5 img{
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s;
+    }
+    #col-5 img:hover{
+        transform: scale(0.92);
+    }
+    #col-6 h1{
+        padding-bottom: 45px;
+        padding-top: 100px;
+    }
+    #col-6 img{
+      border-radius: 10px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        transition: transform 0.2s;
+    }
+    #col-6 img:hover{
+        transform: scale(0.92);
+    }
+    #col-7 h1{
+        padding-bottom: 45px;
+        padding-top: 100px;
+    }
+    #col-7 img{
+      border-radius: 10px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        transition: transform 0.2s;
+    }
+    #col-7 img:hover{
+        transform: scale(0.92);
+    }
+    .mainhead img{
+      display: block;
+      margin-top: -60px;
+      margin-left: 395px;
+      
+    }
+    .mainhead h1{
+      color: #0092ca;
+      text-shadow: -2px -5px 25px rgba(0, 146, 202, 0.4);
+      color: #0092ca;
+      padding-left: 470px;
+      display: block;
+    }
+    #secimg{
+      display: block;
+      margin-left: 830px;
+    }
+    .offersechead{
+      text-shadow: 5px 5px 10px rgba(245, 186, 79, 0.4);
+      color: #f5ba4f;
+      padding-left: 350px;
+      display: block;
+    }
+    .secimg2{
+      display: block;
+      margin-left: 250px;
+      margin-top: 100px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+        <div class="container" id="topcont">
+          <div class="navbar">
+            <div class="logo">
+              <a href="Home.html"
+                ><img
+                src="https://angular.pixelstrap.com/multikart/assets/images/icon/logo.png"
+                alt="NoImage"
+                width="125px"
+              /></a>
+            </div>
+             
+            <nav>
+              <ul id="MenuItems">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="Offers.html">Offers Zone</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Account.html">Account</a></li>
+              </ul>
+            </nav>
+            <a href="cart.html">
+              <img
+              src="catalogue_9342122.png"
+              alt="Sorry"
+              width="40px"/>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="mainhead" >
+        <h1>Winter OffersZone</h1>
+        <img  src="calendar.png" width="50px" alt="">
+        <img id="secimg" src="snowball.png" width="60px" alt="">
+      </div>
+        <div class="container text-center">
+            <div class="row">
+              <div class="col" id="col-1">
+                <h1>Top Winter Offers For Men</h1>
+                <a href="Home.html">
+                    <img id="menimg" src="men offer.png" alt="Re-load" width="400px">
+                </a>     
+              </div>
+              <div class="col" id="col-2">
+                <h1>Top Winter Offers For Women</h1>
+                <a href="Home.html">
+                    <img id="woimg" src="Women offer.png" alt="Re-load" width="500px">
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col" id="col-3" >
+                <h1 style="padding-top: 100px;" >Top Winter Electronics Offers</h1>
+                <a href="Home.html">
+                    <img src="Electronics offers.png" width="300px" alt="">
+                </a>
+              </div>
+              <div class="col" id="col-4">
+                <h1>Top Winter Offers At Perfume's</h1>
+                <a href="Home.html">
+                    <img src="Perfume offer.png" width="300px" alt="">
+                </a>
+              </div>
+              <div class="col" id="col-5" >
+                <h1>Top Winter Offers At SmartWatch's</h1>
+                <a href="Home.html">
+                    <img src="Smartwatch's offer.png" width="500px" alt="">
+                </a>
+              </div>
+              <div class="col" id="col-5" >
+                <h1>Top Winter Offers At Sneaker's</h1>
+                <a href="Home.html">
+                    <img src="illustration-pair-sneaker_289678-26 (1).avif" width="500px" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+    <h1 style="padding-top: 120px; padding-bottom: 50px; " class="offersechead">Summer Offers Comming Sooon....!!!</h1>
+    <div class="container">
+    <div class="row">
+      <div class="col" id="col-6" >
+        <h1  >Summer Offers Comming  soon..!!</h1>
+        <a href="Home.html">
+            <img src="summer offer.png" width="500px" alt="">
+        </a>
+      </div>
+      <div class="col" id="col-7" >
+        <h1>Summer Offers Comming Soon..!!</h1>
+        <img src="Summmer Female Offers.png" width="500px" alt="">
+      </div>
+    </div>
+  </div>
+    <div class="footer">
+        <div class="container" id="bottcont">
+          <div class="navbar">
+            <div class="logo">
+              <a href="Home.html"
+                ><img
+                src="https://angular.pixelstrap.com/multikart/assets/images/icon/logo.png"
+                alt="NoImage"
+                width="200pxpx" style="background-color: white; padding: 10px;"
+              /></a>
+                <h5 style="color: white; padding: 20px;"><b> Fashion Is More Art <br> Than Art Is !!</b></h5>
+        
+            </div>
+            <div id="copyrights" style="color: black;">
+              <span id="footmat" >&#169;This Website is prepared under the regulations of w3.org in 2023
+                this site uses <br> the consumers Information for only buisness purposes. <br>
+                For more Info: <a href="#" style="color: white;">Visit Here </a>
+              </span>
+            
+                <br><br>
+              <span id="appicons">
+              <span style="color: white;">Download Our App On:</span><br><br>
+                <a href="#"> 
+                  <img src="app-store.png" width="150px" alt="">
+                </a>
+                <a href="#">
+                  <img src="play-store.png" width="150px" alt="">
+                </a>
+              </span>
+            </div>
+            <div> 
+              <nav>
+                <ul id="MenuItems1">
+                  <span id="imgspan" style="color: white;">follwo us on :</span>
+                  <li><br><br><a href="https://facebook.com"><img src="facebook.png" alt="facebook"></a></li>
+                  <li><a href="https://instagram.com"><img src="instagram.png" alt="Instgram"></a></li>
+                  <li><a href="https://twitter.com"><img src="twitter (1).png" alt="twitter"></a></li>
+                  <li><a href="https://youtube.com"> <img src="youtube.png" alt="yuotube"></a></li>
+                  <li><a href="https://telegram.com"> <img src="telegram.png" alt="telegram"></a></li>
+                  
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div> 
+      </div>
+  </body>
+</html>

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multikart</title>
+    <link href="resize-logo" rel="icon" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <style>
+     
+      #topcont{
+        max-width: 100vw;
+        background: radial-gradient(circle at 10% 20%, rgb(253, 193, 104) 0%, rgb(251, 128, 128) 90%);
+        
+             
+      }
+      .header{
+        height: 160px; 
+      }.navbar{
+        display: flex;
+        padding: 30px;
+        align-items: center;
+      }
+      nav ul{
+        display: inline-block;
+        list-style-type: none;
+        
+      } menuitem{
+        float: right;
+      }
+      nav{
+        flex:1;
+        text-align:right;
+      }
+
+      
+      nav ul li
+      {
+        display: inline-block;
+        padding: 20px;
+        justify-content: space-around;
+      }
+     
+      a{
+        color: white;
+        text-decoration: none ;
+        transition: transform 0.2s;
+      }
+      
+      a:hover {
+        color: blue ;
+        transform: scale(0.9);
+      }
+      
+      h1{
+        color: #5585b5;
+        margin-left: 100px;
+        margin-top:100px;
+        
+        
+      }
+      #bigimg1{
+        display: block;
+        margin-left: 962px;
+        margin-top: -800px;
+        margin-bottom: 400px;
+      }
+      #bigimg2{
+        display: block;
+        margin-left: 662px;
+        margin-top: -510px;
+        margin-bottom: 400px;
+      }
+      #imgs{
+        background: radial-gradient(circle at 10% 20%, rgb(253, 193, 104) 0%, rgb(251, 128, 128) 90%);
+        height: 500px;
+        margin-bottom: 200px;
+        margin-top: -120px;
+      }
+      p{
+        display: block;
+        font-family: 'gorgia';
+        font-size: large;
+        border-radius: 5px;
+        width: 700px;
+        padding: 50px;
+      }
+      p:hover{
+        color:#5585b5 ;
+      }
+      #bottcont{
+        max-width: 100vw;
+        background:radial-gradient(circle at 10% 20%, rgb(253, 193, 104) 0%, rgb(251, 128, 128) 90%);
+      }
+      
+      #footmat{
+        color: white;
+      }
+
+
+      ul li a img {
+        
+        height: 35px;
+        width: 35px;
+        transition: transform 0.2s;
+        
+      }
+      ul li a img:hover {
+        transform: scale(1.2);
+      }
+      #FP{
+        color:#5585b5;
+        display: inline;
+        margin-left: 490px;
+        border-bottom: 5px solid black;
+        border-radius: 10px;
+        text-align: center;
+        
+      }
+      #FPimgs{
+        transition: transform 0.2s;
+      }
+      #FPimgs a{
+        transform: scale(1.1);
+      }
+
+      #FP1{
+        color:#5585b5;
+        display: inline;
+        margin-left: 480px;
+        border-bottom: 5px solid black;
+        border-radius: 10px;
+        text-align: center;
+        
+      }
+      #FP2{
+        color:#5585b5;
+        display: inline;
+        margin-left: 480px;
+        border-bottom: 5px solid black;
+        border-radius: 10px;
+        text-align: center;
+      }
+      span{
+        font-family:  "Trebuchet MS", Helvetica, sans-serif;
+      
+      }
+      .rating{
+        color: red;
+      }
+      .brands {
+        
+      margin-left: 200px;
+      margin-top: 80px;
+      margin-bottom: 100px;
+      display: inline-block;
+      background-position: fixed;
+     cursor: pointer;
+     filter: grayscale(100%);
+      }
+     .brands:hover{
+     
+      cursor: pointer;
+      filter: grayscale(0);
+
+     }
+
+    .col-5 {
+      width: 150px;
+    }
+
+    .col-5 img {
+      width: 100%;
+      cursor: pointer;
+      filter: grayscale(100%);
+    }
+
+    .col-5 img:hover {
+      width: 100%;
+      cursor: pointer;
+      filter: grayscale(0);
+    }
+    
+   
+      
+    </style>
+  </head>
+
+  <body> 
+    <div class="header">
+      <div class="container" id="topcont">
+        <div class="navbar">
+          <div class="logo">
+            <a href="Home.html"
+              ><img
+              src="https://angular.pixelstrap.com/multikart/assets/images/icon/logo.png"
+              alt="NoImage"
+              width="125px"
+            /></a>
+          </div>
+           
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="Offers.html">Offers Zone</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="Account.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html">
+            <img
+            src="catalogue_9342122.png"
+            alt="Sorry"
+            width="40px"/>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="imgs" ><h1 ><b> Fashion Is More Art <br> Than Art Is !!</b></h1>
+    <br><br> <p >"Fashion has to reflect who you are, what you feel at the moment, and where you're going"
+    <br>"The term 'fashion' originates from the Latin word 'Facere,' which means 'to make,' and describes <br>
+    the manufacturing, mixing, and wearing of outfits adorned <br> with specific cultural aesthetics, patterns, motifs, shapes, and cuts, 
+    <br> allowing people to showcase their group belonging, values, meanings, beliefs, and ways of life".</p>  
+    
+    <img id="bigimg2" src="wepik-export-20231218053719R4Dz.png" alt="Sorry" width="500px">
+    <img id="bigimg1" src="wepik-export-20231218053339j3jO.png" alt="Sorry" width="300px" >
+  </div>
+  <h1 id="FP" >Featuered Products</h1> <br><br><br><br>
+  <div >
+    
+    <div class="container text-center">
+      <div id="FPimgs" class="row">
+       
+        <div class="col">
+          <a href="#">
+          <img src="full-shot-woman-jumping-rope.jpg" alt="Re-load" width="300px">
+        </a>
+        </div>
+        <div class="col">
+          <a href="#">
+          <img src="man-leaning-against-wall-with-basketball_23-2148239483.avif" alt="Re-load" height="420px" >
+        </a>
+        </div>
+        <div class="col">
+          <a href="#">
+          <img src="Jacket.avif" alt="Re-load" height="420px"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <br><br><br>
+    <h1 id="FP1">Top Sales At Men</h1>
+    <br><br><br>
+    <div id="FPimgs1">
+      <div class="container text-center">
+        <div class="row row-cols-4">
+          <div class="col"><a href="#"> <img src="portrait-handsome-stylish-hipster-lambersexual-model.jpg" alt="Re-load" width="280px"></a>
+            <span>JACK&JONSE Brown Checked Shirt </span>
+            <div class="rating">
+              <span id="ratings" href="#"> 
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="far fa-star"></i>
+              </span>
+            </div>
+            <span>₹699.00</span>
+          </div>
+        <div class="col">
+          <a href="#">
+            <img src="240_F_328379347_xEKgEB2wkjAJmcqSTmrg4uKxfWrlL7D9.jpg" alt="Re-load" width="300px" >
+          </a>
+          <span>SONY JTX120</span>
+          <div class="rating">
+            <span id="ratings" href="#"> 
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+            </span>
+          </div>
+          <span>₹10,999.00</span>
+        </div>
+        <div class="col">
+          <a href="#">
+            <img src="leather-belt_74190-2615.avif" alt="Re-load" height="230px" width="270px" >
+          </a>
+          <span>PUMA Leather Belt</span>
+          <div class="rating">
+            <span id="ratings" href="#"> 
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="far fa-star"></i>
+            </span>
+          </div>
+          <span>₹899.00</span>
+        </div>
+        <div class="col">
+          <a href="#">
+            <img src="fashion-shoes-sneakers_1203-7529.avif" alt="Re-load" width="320px" height="230px">
+          </a>
+          <span>NIKE Air A233</span>
+          <div class="rating">
+            <span id="ratings" href="#"> 
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="far fa-star"></i>
+            </span>
+          </div>
+          <span>₹18,999.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="FPimgs1"><div class="container text-center">
+  <div class="row row-cols-4">
+    <div class="col"><a href="#"> <img src="product-8.jpg" alt="Re-load"  height="300px" ></a>
+    <span>FOSSIL Black Chain Watch </span>
+    <div class="rating">
+      <span id="ratings" href="#"> 
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </span>
+    </div>
+    <span>₹39,999.00</span>
+  </div>
+    <div class="col">
+      <a href="#">
+        <img id="imgspl" src="stylish-redhead-urban-traveller-male-sunglasses-holds-backpack-grey-background-studio_613910-1038.jpg" alt="Re-load" height="300px" width="280px" >
+      </a>
+      <span> HRX <br> Casual Shirt</span>
+      <div class="rating">
+        <span id="ratings" href="#"> 
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+        </span>
+      </div>
+      <span>₹10,999.00</span>
+    </div>
+    <div class="col">
+      <a href="#">
+        <img src="240_F_555943248_L5Saujq99exHAMmEzNCJgZtvF6X1HheT.jpg" alt="Re-load" height="300px" width="280px" >
+      </a>
+      <span>OPPO Air</span>
+      <div class="rating">
+        <span id="ratings" href="#"> 
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="far fa-star"></i>
+         <i class="far fa-star"></i>
+        </span>
+      </div>
+      <span>₹1,899.00</span>
+    </div>
+    <div class="col">
+      <a href="#">
+        <img src="portrait-handsome-confident-stylish-hipster-lambersexual-model-with-curly-hairstyle-sexy-man-dressed-jeans-jacket-fashion-male-isolated-white-wall-studio-sunglass.jpg" alt="Re-load" width="330px" height="300px">
+      </a>
+      <span>H&M Denim Jacket</span>
+      <div class="rating">
+        <span id="ratings" href="#"> 
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="far fa-star"></i>
+        </span>
+      </div>
+      <span>₹1,999.00</span>
+    </div>
+    </div>
+   </div>
+  </div>
+</div>
+<br><br><br>
+<h1 id="FP2">Top Sales At Women</h1>
+<br><br><br>
+<div id="FPimgs1"><div class="container text-center">
+  <div class="row row-cols-4">
+    <div class="col"><a href="#"> <img src="white-female-handbag-bag-purse-clutch-whete-background-isolated-white-backgroundfront-view_308547-6621.avif" alt="Re-load" width="340px"></a>
+    <span>PRADA White Snake Leather Bag </span>
+    <div class="rating">
+      <span id="ratings" href="#"> 
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="far fa-star"></i>
+    </span>
+    </div>
+    <span>₹59,999.00</span>
+  </div>
+    <div class="col">
+      <a href="#">
+        <img src="perfume-bottle-isolated-white-background_977935-550.avif" alt="Re-load" width="299px" height="239px"  >
+      </a>
+      <span>LUX Lavender Perfume</span>
+      <div class="rating">
+        <span id="ratings" href="#"> 
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+        </span><br>
+      </div>
+      <span>₹10,999.00</span>
+      
+    </div>
+    <div class="col">
+      <a href="#">
+        <img src="shoes_1203-8153.avif" alt="Re-load" height="230px" width="290px" >
+      </a>
+      <span>PRADA Leather shoes</span>
+      <div class="rating">
+        <span id="ratings" href="#"> 
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="far fa-star"></i>
+        </span>
+      </div>
+      <span>₹12,899.00</span>
+    </div>
+    <div class="col">
+      <a href="#">
+        <img src="black-headphones-white_94046-1928.avif" alt="Re-load" width="320px" height="220px">
+      </a>
+      <span>APPLE AirPods Max</span>
+      <div class="rating">
+        <span id="ratings" href="#"> 
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="far fa-star"></i>
+        </span>
+      </div>
+      <span>₹29,999.00</span>
+    </div>
+  </div>
+ </div>
+</div>
+<h1 style="margin-left: 550px;">Our Brands</h1>
+<div class="brands">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-5">
+        <img src="Prada.svg" alt="Re-load"  />
+      </div>
+
+      <div class="col-5">
+        <img src="H&M.jpg" alt="" />
+      </div>
+
+      <div class="col-5">
+        <img src="Lacoste.jpg" alt="" />
+      </div>
+
+      <div class="col-5">
+        <img src="Crocs.png" alt="" />
+      </div>
+
+      <div class="col-5">
+        <img src="Ray Ban.svg" alt="" />
+      </div>
+
+      <div class="col-5">
+        <img src="Gucci.jpg" alt=""/>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="brands">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-5">
+        <img src="maj.webp" alt="" />
+      </div>
+
+      <div class="col-5">
+        <img src="Disel.webp" alt="" />
+      </div>
+
+      <div class="col-5">
+        <img src="Fila Holdings Corp.svg" height="100px" alt="" />
+      </div>
+
+      <div class="col-5">
+        <img src="Adidas New 2022.png" alt="" />
+      </div>
+
+      <div class="col-5">
+        <img src="Calvin Klein.jpg" alt="" />
+      </div>
+
+      <div class="col-5">
+        <img src="Levi's with Slogan.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+  <div class="footer">
+    <div class="container" id="bottcont">
+      <div class="navbar">
+        <div class="logo">
+          <a href="Home.html"
+            ><img
+            src="https://angular.pixelstrap.com/multikart/assets/images/icon/logo.png"
+            alt="NoImage"
+            width="200pxpx" style="background-color: white; padding: 10px;"
+          /></a>
+            <h5 style="color: white; padding: 20px;"><b> Fashion Is More Art <br> Than Art Is !!</b></h5>
+    
+        </div>
+        <div id="copyrights" style="color: black;">
+          <span id="footmat" >&#169;This Website is prepared under the regulations of w3.org in 2023
+            this site uses <br> the consumers Information for only buisness purposes. <br>
+            For more Info: <a href="#" style="color: white;">Visit Here </a>
+          </span>
+        
+            <br><br>
+          <span id="appicons">
+          <span style="color: white;">Download Our App On:</span><br><br>
+            <a href="#"> 
+              <img src="app-store.png" width="150px" alt="">
+            </a>
+            <a href="#">
+              <img src="play-store.png" width="150px" alt="">
+            </a>
+          </span>
+        </div>
+        <div> 
+          <nav>
+            <ul id="MenuItems1">
+              <span id="imgspan" style="color: white;">follwo us on :</span>
+              <li><br><br><a href="https://facebook.com"><img src="facebook.png" alt="facebook"></a></li>
+              <li><a href="https://instagram.com"><img src="instagram.png" alt="Instgram"></a></li>
+              <li><a href="https://twitter.com"><img src="twitter (1).png" alt="twitter"></a></li>
+              <li><a href="https://youtube.com"> <img src="youtube.png" alt="yuotube"></a></li>
+              <li><a href="https://telegram.com"> <img src="telegram.png" alt="telegram"></a></li>
+              
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div> 
+  </div>
+   
+    
+  </body>
+</html>
